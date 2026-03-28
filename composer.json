@@ -23,11 +23,25 @@
             "src/helpers.php"
         ]
     },
+    "autoload-dev": {
+        "psr-4": {
+            "JasanyaTech\\SEO\\Tests\\": "tests/"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
                 "JasanyaTech\\SEO\\SeoServiceProvider"
             ]
+        }
+    },
+    "scripts": {
+        "test": "@php vendor/bin/pest"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
         }
     },
     "minimum-stability": "stable",
